@@ -9,12 +9,37 @@ h3 {
     text-decoration-line: underline;
 }
 
+h2 {
+    margin: 5%;
+    text-align: center;
+    text-decoration: underline;
+}
+
 p {
     text-align: justify;
     background-color: #f7f6f0;
+    font-family: Helvetica, sans-serif;
 }
 
 .image {
     width: 610px;
     height: 410px;
+}
+
+.list {
+    font-family: Helvetica, sans-serif;
+}
+
+footer {
+    background-color: #ffcc00;
+    height: 140px;
+    text-align: left;
+}
+
+strong {
+    color: black;
+}
+
+footer li {
+    color: black;
 }
