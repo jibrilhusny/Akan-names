@@ -2,3 +2,19 @@ h4 {
     color: #303131;
     font-size: 300%;
 }
+
+h3 {
+    text-align: center;
+    color: black;
+    text-decoration-line: underline;
+}
+
+p {
+    text-align: justify;
+    background-color: #f7f6f0;
+}
+
+.image {
+    width: 610px;
+    height: 410px;
+}
