@@ -56,10 +56,10 @@ function validateForm() {
     getDate();
     if (male.checked) {
         console.log(arrayakanmale[d]);
-        document.getElementById("display").innerHTML = `Your Akan Name is ` + `<span>` + arrayakanmale[d] + `</span>` + '<br>' + "IT MEANS YOU WERE  BORN ON " + date.toLocaleString('en-us', { weekday: 'long' });
+        document.getElementById("display").innerHTML = `Your name ` + `<span>` + arrayakanmale[d] + `</span>` + '<br>' + "This means you were born on  " + date.toLocaleString('en-us', { weekday: 'long' });
     } else if (female.checked) {
         console.log(arrayakanfemale[d]);
-        document.getElementById("display").innerHTML = `Your Akan Name is ` + `<span>` + arrayakanfemale[d] + `</span>` + `<br>` + `IT MEANS YOU WERE BORN ON ` + date.toLocaleString('en-us', { weekday: 'long' });
+        document.getElementById("display").innerHTML = `Your name ` + `<span>` + arrayakanfemale[d] + `</span>` + `<br>` + `This means you were born on  ` + date.toLocaleString('en-us', { weekday: 'long' });
     }
 }
 
