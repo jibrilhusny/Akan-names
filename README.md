@@ -2,7 +2,7 @@
 #### website about Akannames, 16th july 2021
 #### By Jibril husny
 ## Description
-This is a webpage that generates someone ghanian name  known as Akanname based on them inputing their date of birth and gender.
+This is a webpage that generates someone ghanian name  known as Akanname based on people inputing their date of birth and gender.
 Akan names is naming of children based on the day of the week they were born.
 ## Setup/Installation Requirements
 * Clone the repository
