@@ -13,10 +13,10 @@ function getDate() {
 
 
     if (dateOutput == "") {
-        alert("PLEASE ENTER A VALID DATE")
+        alert("Please enter a valid date")
 
     } else if (male.checked == false && female.checked == false) {
-        alert("PLEASE SELECT A GENDER")
+        alert("Please select your gender")
 
     }
 
