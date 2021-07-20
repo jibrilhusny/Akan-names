@@ -43,3 +43,7 @@ strong {
 footer li {
     color: black;
 }
+
+#display {
+    text-align: center;
+}
