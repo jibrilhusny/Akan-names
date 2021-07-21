@@ -1,18 +1,18 @@
-const arrayakanmale = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+const akanMaleArray = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
-const arrayakanfemale = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+const akanFemaleArray = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 function getDate() {
 
-    let dateOutput = document.getElementById("date").value;
-    console.log(dateOutput);
+    let dateAcquired = document.getElementById("date").value;
+    console.log(dateAcquired);
 
     let male = document.getElementById("male");
 
     let female = document.getElementById("female");
 
 
-    if (dateOutput == "") {
+    if (dateAcquired == "") {
         alert("Please enter a valid date")
 
     } else if (male.checked == false && female.checked == false) {
@@ -20,7 +20,7 @@ function getDate() {
 
     }
 
-    date = new Date(dateOutput);
+    date = new Date(dateAcquired);
     console.log(date);
 
 
@@ -43,28 +43,28 @@ function getDate() {
     console.log(DD);
 
 
-    d = date.getDay();
+    dateOfTheWeek = date.getDay();
     let dd = Math.round(
         (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
     );
-    console.log(d);
+    console.log(dateOfTheWeek);
 
-    return d;
+    return dateOfTheWeek;
 }
 
-function validateForm() {
+function formValidation() {
     getDate();
     if (male.checked) {
-        console.log(arrayakanmale[d]);
-        document.getElementById("display").innerHTML = `Your name ` + `<span>` + arrayakanmale[d] + `</span>` + '<br>' + "This means you were born on  " + date.toLocaleString('en-us', { weekday: 'long' });
+        console.log(akanMaleArray[dateOfTheWeek]);
+        document.getElementById("display").innerHTML = `Your name is` + `<span>` + akanMaleArray[dateOfTheWeek] + `</span>` + '<br>' + "You were born on  " + date.toLocaleString('en-us', { weekday: 'long' });
     } else if (female.checked) {
-        console.log(arrayakanfemale[d]);
-        document.getElementById("display").innerHTML = `Your name ` + `<span>` + arrayakanfemale[d] + `</span>` + `<br>` + `This means you were born on  ` + date.toLocaleString('en-us', { weekday: 'long' });
+        console.log(akanFemaleArray[dateOfTheWeek]);
+        document.getElementById("display").innerHTML = `Your name is` + `<span>` + akanFemaleArray[dateOfTheWeek] + `</span>` + `<br>` + `You were born on  ` + date.toLocaleString('en-us', { weekday: 'long' });
     }
 }
 
 
 function onSubmit() {
-    validateForm();
+    formValidation();
 
 }
